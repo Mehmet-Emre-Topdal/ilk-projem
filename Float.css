@@ -1,0 +1,42 @@
+#FLOAT{
+    margin-top: 150px;         
+}
+
+.feature{
+    height: 400px;
+}
+.col2{
+    float:left;
+    width: 50%;
+}
+.col3{
+    float:left;
+    width: 33.3%;
+    height: 400px;
+}
+
+@media(max-width: 768px){
+    /*telefon yatay veya dikey olsun farketmez. colonlar ekranı tamamen kaplayacak*/
+    .col2,.col3{
+        width: 100%;
+    }
+} 
+
+.clearfix::after {
+ content: "";
+ clear: both;
+ display: table;
+ margin-bottom: 100px;
+ }
+
+ #first{
+     background-size: cover;
+     background-image: linear-gradient(rgba(230,255,230,0.1),rgba(102,255,102,0.3)),url(img/hektor_showcase.jpeg);
+     background-position: center;
+ }
+ #second{
+     background-color: #BDD2B6;
+     text-align: left;
+     padding: 15px;
+     color: black;
+ }

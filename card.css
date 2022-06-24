@@ -1,0 +1,83 @@
+.Container{
+    width: 900px;
+    margin: 150px auto;
+}
+
+.card-container{
+    float: left;
+    width: 33.33%; 
+    padding: 10px;
+    top:0;/*Bu bi başlangıç değeri, bu olmadan transform çalışmaz*/
+    transition: all .5s;
+}
+
+@media(max-width: 768px){
+    /*telefon yatay veya dikey olsun farketmez. colonlar ekranı tamamen kaplayacak*/
+    .card-container{
+        width: 100%;
+    }
+} 
+
+.card-container:hover{
+    transform: translateY(-15px);
+}
+
+.Container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card{
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card-image{
+    width:100%;
+    max-height: 350px;
+}
+.card-body{
+    padding: 25px;
+}
+
+
+@media (min-width: 576px) { 
+
+    .Container {
+        margin: 0 auto;
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+ 
+    .Container {
+        margin: 0 auto;
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) { 
+  
+    .Container {
+        margin: 0 auto;
+        width: 960px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+  
+    .Container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+ }
+
+@media (min-width: 1400px) { 
+  
+    .Container {
+        margin: 0 auto;
+        width: 1320px;
+    }
+ }
